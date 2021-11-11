@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/10000hours.css">
     <style>
         body {
             display: flex;
@@ -14,10 +16,20 @@
             background-color: #5B2386;
         }
         .title {
+            position:absolute;
+            top: 50px;
             width: 600px;
+        }
+        .clock {
+            position:absolute;
+            top: 50px;
+            float:left;
+            width: 300px;
+            z-index: -10;
         }
         .saying {
             color: yellow;
+            font-family: 'OTEnjoystoriesBA';
         }
         p {
             margin: 5px;
@@ -25,19 +37,22 @@
 
         @media screen and (max-width: 750px) {
             .title {
+                position:absolute;
+                top: 80px;
                 width: 400px;
             }
             .clock {
                 position:absolute;
                 top: 30px;
                 float:left;
-                width: 200px;
+                width: 180px;
                 z-index: -10;
             }
             .saying {
                 position: absolute;
-                top: 222px;
+                top: 250px;
                 color: yellow;
+                font-size: 30px;
             }
             .quote {
                 position: absolute;
@@ -45,6 +60,7 @@
             }
             p {
                 color: white;
+                font-family: 'GmarketSansMedium';
                 font-size: 20px;
                 line-height: 1.3em;
                 text-align: center;
@@ -75,25 +91,31 @@
                 line-height: 1.3em;
             }
             .input-user::placeholder {
-                font-weight: 700;
                 color: #BABCBE;
+                font-family: 'GmarketSansMedium';
             }
             button {
                 position: absolute;
                 top: 650px;
-                background-color: yellow;
+                background-color: #FCEE21;
                 border-radius: 13px;
                 border: 0;
-                width: 260px;
+                width: 280px;
                 height: 68px;
                 padding: 5px 20px;
                 font-size: 18px;
                 text-align: center;
             }
             button p {
-                color: purple;
+                color: #5B2386;
+                font-family: 'GmarketSansBold';
                 font-size: 18px;
-                font-weight: 800;
+            }
+            button::after {
+                content: url('./img/click.png') no-repeat;
+                position: absolute;
+                top: 50px;
+                left: 100px;
             }
             footer {
                 position: absolute;
