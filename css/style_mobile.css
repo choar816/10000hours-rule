@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    background-color: #5B2386;
+}
+
+.title {
+    position: absolute;
+    top: 80px;
+    width: 400px;
+}
+
+/* why not working.. */
+.title::after {
+    content: url('./img/clock.png');
+    width: 180px;
+    position: absolute;
+    top: 90px;
+    left: -100px;
+    z-index: -10;
+}
+
+.clock {
+    position: absolute;
+    top: 30px;
+    float: left;
+    width: 180px;
+    z-index: -10;
+}
+.saying {
+    position: absolute;
+    top: 250px;
+    color: yellow;
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 30px;
+}
+.saying::after {
+    content: url('./img/quotes.png');
+    position: absolute;
+    top: 90px;
+    left: -45px;
+}
+p {
+    color: white;
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    line-height: 1.3em;
+    text-align: center;
+    margin: 5px;
+}
+p strong {
+    font-family: 'GmarketSansBold';
+}
+.plan p {
+    display: inline;
+}
+.def {
+    position: absolute;
+    top: 320px;
+}
+.plan {
+    position: absolute;
+    top: 460px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+input {
+    display: inline;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 5px 20px;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+.input-user::placeholder {
+    color: #BABCBE;
+    font-family: 'GmarketSansMedium';
+}
+
+button {
+    position: absolute;
+    top: 650px;
+    background-color: #FCEE21;
+    border-radius: 13px;
+    border: 0;
+    width: 280px;
+    height: 68px;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+button p {
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    font-size: 18px;
+}
+button::after {
+    content: url('./img/click.png');
+    position: absolute;
+    top: 20px;
+    left: 280px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 800px;
+}
+footer p {
+    font-size: 10px;
+    padding: 20px 0;
+}
+footer img {
+    width: 125px;
+}

@@ -1,0 +1,25 @@
+@media screen and (min-width: 750px) {
+    .title {
+        top: 130px;
+        width: 600px;
+    }
+    .clock {
+        top: 50px;
+        width: 265px;
+    }
+    .saying {
+        top: 350px;
+    }
+    .def {
+        top: 430px;
+    }
+    .plan {
+        top: 580px;
+    }
+    button {
+        top: 800px;
+    }
+    footer {
+        top: 1000px;
+    }
+}
