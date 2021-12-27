@@ -38,6 +38,20 @@
     left: 450px;
   }
 
+  .loading {
+      margin-bottom: 80px;
+  }
+  .loading img {
+      width: 100px;
+  }
+
+  .result>p {
+    line-height: 3em;
+  }
+  .result strong {
+      font-size: 60px;
+  }
+
   footer {
     top: 950px;
   }
