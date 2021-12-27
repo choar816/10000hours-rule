@@ -1,44 +1,44 @@
 @media screen and (min-width: 750px) {
-    .title {
-        top: 130px;
-        width: 600px;
-    }
-    .clock {
-        top: 50px;
-        width: 265px;
-    }
-    
-    .saying {
-        top: 350px;
-        font-size: 35px;
-    }
-    .definition {
-        top: 430px;
-    }
+  .title {
+    margin: 50px 0 120px;
+    width: 600px;
+  }
+  .clock {
+    top: 50px;
+    width: 265px;
+  }
 
-    .plan {
-        top: 580px;
-        text-align: center;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .plan1 {
-        width: 600px;
-    }
-    .plan2 {
-        line-height: 50px;
-    }
+  .saying {
+    font-size: 35px;
+  }
+  .definition {
+    margin-bottom: 80px;
+  }
 
-    button {
-        top: 800px;
-        width: 450px;
-    }
-    button::after {
-        top: 0;
-        left: 450px;
-    }
+  .plan {
+    margin-bottom: 80px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+  }
+  .plan1 {
+    width: 600px;
+  }
+  .plan2 {
+    line-height: 50px;
+  }
 
-    footer {
-        top: 950px;
-    }
+  .calculate {
+    margin-bottom: 80px;
+    width: 450px;
+  }
+  .calculate::after {
+    top: 0;
+    left: 450px;
+  }
+
+  footer {
+    top: 950px;
+  }
 }

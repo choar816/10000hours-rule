@@ -1,132 +1,129 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px;
-    background-color: #5B2386;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  background-color: #5b2386;
 }
 
 .title {
-    position: absolute;
-    top: 80px;
-    width: 400px;
+  position: relative;
+  width: 400px;
+  margin-bottom: 90px;
 }
 .title::after {
-    content: url('../img/clock.png');
-    width: 180px;
-    position: absolute;
-    top: 90px;
-    left: -100px;
-    z-index: -10;
+  content: url("../img/clock.png");
+  width: 180px;
+  position: absolute;
+  top: 90px;
+  left: -100px;
+  z-index: -10;
 }
 
 .clock {
-    position: absolute;
-    top: 30px;
-    float: left;
-    width: 180px;
-    z-index: -10;
+  position: absolute;
+  top: 30px;
+  float: left;
+  width: 180px;
+  z-index: -10;
 }
 
 .saying {
-    position: absolute;
-    top: 250px;
-    color: #F5DF4D;
-    font-family: 'OTEnjoystoriesBA';
-    font-size: 30px;
+  margin-bottom: 40px;
+  color: #f5df4d;
+  font-family: "OTEnjoystoriesBA";
+  font-size: 30px;
 }
 
 .definition {
-    position: absolute;
-    top: 320px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .definition::after {
-    content: url('../img/quotes.png');
-    position: absolute;
-    width: 100px;
-    top: 20px;
-    left: -35px;
+  content: url("../img/quotes.png");
+  position: absolute;
+  width: 100px;
+  top: 20px;
+  left: -35px;
 }
 
 p {
-    color: white;
-    font-family: 'GmarketSansMedium';
-    font-size: 20px;
-    line-height: 1.3em;
-    text-align: center;
-    margin: 5px;
+  color: white;
+  font-family: "GmarketSansMedium";
+  font-size: 20px;
+  line-height: 1.3em;
+  text-align: center;
+  margin: 5px;
 }
 p strong {
-    font-family: 'GmarketSansBold';
+  font-family: "GmarketSansBold";
 }
 
 .plan {
-    position: absolute;
-    top: 460px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 480px;
+  text-align: center;
 }
 .plan p {
-    display: inline;
+  display: inline;
 }
 
 .input-user {
-    display: inline;
-    width: 160px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    margin: 0 5px;
-    padding: 5px 20px;
-    font-size: 20px;
-    line-height: 1.3em;
+  display: inline;
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 1.3em;
 }
 .input-user::placeholder {
-    color: #BABCBE;
-    font-family: 'GmarketSansMedium';
+  color: #babcbe;
+  font-family: "GmarketSansMedium";
 }
 
 button {
-    background-color: #FCEE21;
-    border-radius: 20px;
-    border: 0;
-    font-size: 18px;
-    text-align: center;
-    cursor: pointer;
+  background-color: #fcee21;
+  border-radius: 20px;
+  border: 0;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
 }
 button p {
-    color: #5B2386;
-    font-family: 'GmarketSansBold';
-    font-size: 18px;
+  color: #5b2386;
+  font-family: "GmarketSansBold";
+  font-size: 18px;
 }
 
 .calculate {
-    position: absolute;
-    top: 650px;
-    width: 290px;
-    padding: 5px 30px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 290px;
+  padding: 5px 30px;
 }
 .calculate::after {
-    content: url('../img/click.png');
-    position: absolute;
-    top: 20px;
-    left: 290px;
+  content: url("../img/click.png");
+  position: absolute;
+  top: 20px;
+  left: 290px;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 800px;
-    padding-bottom: 50px;
-}
-footer p {
-    font-size: 10px;
-    padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer img {
-    width: 125px;
+  margin-bottom: 20px;
+  width: 125px;
+}
+footer p {
+  font-size: 10px;
 }
