@@ -72,7 +72,7 @@ p strong {
     display: inline;
 }
 
-input {
+.input-user {
     display: inline;
     width: 160px;
     height: 40px;
@@ -89,13 +89,9 @@ input {
 }
 
 button {
-    position: absolute;
-    top: 650px;
     background-color: #FCEE21;
     border-radius: 20px;
     border: 0;
-    width: 290px;
-    padding: 5px 30px;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
@@ -105,7 +101,14 @@ button p {
     font-family: 'GmarketSansBold';
     font-size: 18px;
 }
-button::after {
+
+.calculate {
+    position: absolute;
+    top: 650px;
+    width: 290px;
+    padding: 5px 30px;
+}
+.calculate::after {
     content: url('../img/click.png');
     position: absolute;
     top: 20px;
