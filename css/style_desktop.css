@@ -9,17 +9,34 @@
     }
     .saying {
         top: 350px;
+        font-size: 35px;
     }
     .definition {
         top: 430px;
     }
     .plan {
         top: 580px;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
     }
+    .plan1 {
+        width: 600px;
+    }
+    .plan2 {
+        line-height: 50px;
+    }
+
     button {
         top: 800px;
+        width: 450px;
     }
+    button::after {
+        top: 0;
+        left: 450px;
+    }
+
     footer {
-        top: 1000px;
+        top: 950px;
     }
 }

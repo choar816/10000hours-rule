@@ -11,10 +11,8 @@ body {
     top: 80px;
     width: 400px;
 }
-
-/* why not working.. */
 .title::after {
-    content: url('./img/clock.png');
+    content: url('../img/clock.png');
     width: 180px;
     position: absolute;
     top: 90px;
@@ -29,19 +27,27 @@ body {
     width: 180px;
     z-index: -10;
 }
+
 .saying {
     position: absolute;
     top: 250px;
-    color: yellow;
+    color: #F5DF4D;
     font-family: 'OTEnjoystoriesBA';
     font-size: 30px;
 }
-.saying::after {
-    content: url('./img/quotes.png');
+
+.definition {
     position: absolute;
-    top: 90px;
-    left: -45px;
+    top: 320px;
 }
+.definition::after {
+    content: url('../img/quotes.png');
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: -35px;
+}
+
 p {
     color: white;
     font-family: 'GmarketSansMedium';
@@ -53,20 +59,19 @@ p {
 p strong {
     font-family: 'GmarketSansBold';
 }
-.plan p {
-    display: inline;
-}
-.definition {
-    position: absolute;
-    top: 320px;
-}
+
 .plan {
     position: absolute;
     top: 460px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
 }
+.plan p {
+    display: inline;
+}
+
 input {
     display: inline;
     width: 160px;
@@ -87,11 +92,10 @@ button {
     position: absolute;
     top: 650px;
     background-color: #FCEE21;
-    border-radius: 13px;
+    border-radius: 20px;
     border: 0;
-    width: 280px;
-    height: 68px;
-    padding: 5px 20px;
+    width: 290px;
+    padding: 5px 30px;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
@@ -102,17 +106,19 @@ button p {
     font-size: 18px;
 }
 button::after {
-    content: url('./img/click.png');
+    content: url('../img/click.png');
     position: absolute;
     top: 20px;
-    left: 280px;
+    left: 290px;
 }
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     top: 800px;
+    padding-bottom: 50px;
 }
 footer p {
     font-size: 10px;
