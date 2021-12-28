@@ -58,6 +58,17 @@
     font-size: 60px;
   }
 
+  .modal-message p:first-child {
+    font-size: 80px;
+  }
+  .modal img {
+    width: 433px;
+  }
+  .modal button {
+    width: 450px;
+    padding: 5px 30px;
+  }
+
   footer {
     top: 950px;
   }

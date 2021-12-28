@@ -1,11 +1,19 @@
 const body = document.querySelector('body');
+
 const inputField = body.querySelector('.input-field');
 const inputHour = body.querySelector('.input-hour');
 const btnCalculate = body.querySelector('.calculate');
 const sectionLoading = body.querySelector('.loading');
 const sectionResult = body.querySelector('.result');
+
 const resultField = sectionResult.querySelector('.result-field');
 const resultDay = sectionResult.querySelector('.result-day');
+const btnTraining = sectionResult.querySelector('.training');
+const btnShare = sectionResult.querySelector('.share');
+
+const modalContainer = body.querySelector('.modal-container');
+const modal = modalContainer.querySelector('.modal');
+const btnGoTraining = modal.querySelector('.go-training');
 
 btnCalculate.onclick = processCalculateClick;
 
@@ -29,6 +37,25 @@ function showLoadingAndResult() {
   showLoading();
   editResult();
   setTimeout(showResult, 2000);
+}
+
+btnTraining.onclick = showModal;
+btnGoTraining.onclick = hideModal;
+
+modalContainer.addEventListener('click', function (e) {
+  e = window.event || e;
+  console.log(e.target);
+  console.log(this);
+  if (this === e.target) {
+    hideModal();
+  }
+});
+
+function showModal() {
+  modalContainer.style.display = 'block';
+}
+function hideModal() {
+  modalContainer.style.display = 'none';
 }
 
 function checkInput() {
