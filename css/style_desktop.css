@@ -9,6 +9,7 @@
   }
 
   .saying {
+    margin-bottom: 50px;
     font-size: 35px;
   }
   .definition {
@@ -23,33 +24,38 @@
     width: 800px;
   }
   .plan1 {
+    margin-bottom: 10px;
     width: 600px;
   }
   .plan2 {
     line-height: 50px;
   }
 
+  button p {
+    font-size: 20px;
+  }
+
   .calculate {
     margin-bottom: 80px;
-    width: 450px;
+    width: 460px;
   }
   .calculate::after {
     top: 0;
-    left: 450px;
+    left: 460px;
   }
 
   .loading {
-      margin-bottom: 80px;
+    margin-bottom: 80px;
   }
   .loading img {
-      width: 100px;
+    width: 100px;
   }
 
-  .result>p {
+  .result > p {
     line-height: 3em;
   }
   .result strong {
-      font-size: 60px;
+    font-size: 60px;
   }
 
   footer {

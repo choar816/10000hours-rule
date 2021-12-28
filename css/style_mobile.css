@@ -37,7 +37,7 @@ body {
 
 .definition {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .definition::after {
   content: url("../img/quotes.png");
@@ -60,7 +60,7 @@ p strong {
 }
 
 .plan {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -103,7 +103,7 @@ button p {
 }
 
 .calculate {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   position: relative;
   width: 290px;
   padding: 5px 30px;
@@ -116,35 +116,37 @@ button p {
 }
 
 .loading {
-    display: none;
-    margin-bottom: 50px;
+  /* display: none; */
+  margin-bottom: 50px;
 }
 .loading img {
-    display: inline-block;
-    width: 80px;
-    transition: transform 2s linear;
-    transform: rotate(1.5turn);
+  display: inline-block;
+  width: 80px;
+  transition: transform 2s linear;
+  transform: rotate(1.5turn);
 }
 
 .result {
-    display: none;
+  /* display: none; */
+  margin-bottom: 80px;
 }
-.result>p {
-    line-height: 1.8em;
+.result > p {
+  line-height: 1.8em;
 }
 .result strong {
-    padding: 0 10px;
-    font-size: 25px;
+  padding: 0 10px;
+  font-size: 25px;
 }
 .result article {
-    text-align: center;
+  margin-top: 50px;
+  text-align: center;
 }
 .result button {
-    padding: 5px 30px;
-    margin: 50px 5px;
+  padding: 5px 30px;
+  margin: 0 5px;
 }
 .result .share {
-    background-color: white;
+  background-color: white;
 }
 
 footer {
