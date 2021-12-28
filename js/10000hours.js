@@ -41,6 +41,7 @@ function showLoadingAndResult() {
 
 btnTraining.onclick = showModal;
 btnGoTraining.onclick = hideModal;
+btnShare.onclick = CopyUrlToClipboard;
 
 modalContainer.addEventListener('click', function (e) {
   e = window.event || e;
@@ -56,6 +57,19 @@ function showModal() {
 }
 function hideModal() {
   modalContainer.style.display = 'none';
+}
+
+function CopyUrlToClipboard() {
+  let temp = document.createElement('input');
+  const url = location.href;
+
+  body.appendChild(temp);
+  temp.value = url;
+  temp.select();
+  document.execCommand('copy');
+  body.removeChild(temp);
+
+  alert('URL이 클립보드로 복사되었습니다.');
 }
 
 function checkInput() {
