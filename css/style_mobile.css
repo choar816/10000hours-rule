@@ -1,8 +1,17 @@
+@keyframes rotateClock {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px;
+  padding: 80px 20px;
   background-color: #5b2386;
 }
 
@@ -116,18 +125,17 @@ button p {
 }
 
 .loading {
-  /* display: none; */
+  display: none;
   margin-bottom: 50px;
 }
 .loading img {
   display: inline-block;
   width: 80px;
-  transition: transform 2s linear;
-  transform: rotate(1.5turn);
+  animation: rotateClock 1.5s linear infinite;
 }
 
 .result {
-  /* display: none; */
+  display: none;
   margin-bottom: 80px;
 }
 .result > p {
@@ -143,7 +151,7 @@ button p {
 }
 .result button {
   padding: 5px 30px;
-  margin: 0 5px;
+  margin: 5px 5px;
 }
 .result .share {
   background-color: white;
